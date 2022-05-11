@@ -6,7 +6,6 @@ Basic flask application starter files
 
 ## Author
 
-[Mugera Hughes](https://github.com/mugerah/)
 
 ### Running the Application
 
@@ -30,10 +29,9 @@ Basic flask application starter files
 
 ## Contact Information
 
-For any further inquiries or contributions or comments, reach me at [Mugera Hughes](https://github.com/MugeraH)
+
 
 ### License
 
-[MIT License](https://github.com/MugeraH/flask_code/blob/main/license)
 
 Copyright (c) 2021
