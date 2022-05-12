@@ -11,7 +11,7 @@ class User(UserMixin,db.Model):
     username= db.Column(db.String(255))
     email = db.Column(db.String(255),unique = True,index = True)
     pass_secure = db.Column(db.String(255))
-    products = db.relationship('Product', backref='user', lazy='dynamic')
+    product = db.relationship('Product', backref='user', lazy='dynamic')
   
     @property
     def password(self):
@@ -44,10 +44,10 @@ class Product(db.Model):
     name= db.Column(db.String(255),nullable = False)
     description = db.Column(db.Text(), nullable = False)
     price = db.Column(db.Integer(), nullable = False)
-    size = db.Column(db.String(), nullable = False)
+    size = db.Column(db.String(255), nullable = False)
     image=db.Column(db.String())
 
-
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
 
     
