@@ -1,6 +1,9 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SelectField, TextAreaField, SubmitField
+
+from wtforms import StringField,TextAreaField,SubmitField,SelectField,IntegerField
+
 from wtforms.validators import DataRequired
+
 
 
 
@@ -9,3 +12,11 @@ from wtforms.validators import DataRequired
 class UpdateProfile(FlaskForm):
     bio = TextAreaField('bio', validators=[DataRequired()])
     submit = SubmitField('Post')
+
+class ProductForm(FlaskForm):
+    name = StringField('Name', validators=[DataRequired()])
+    description = StringField('Description', validators=[DataRequired()])
+    size = SelectField('Size', choices=[('Small','Small'),('Medium','Medium'),('Large','Large ')],validators=[DataRequired()])
+    price = IntegerField('Price of the product', validators=[DataRequired()])
+    submit = SubmitField('ADD PRODUCT')
+

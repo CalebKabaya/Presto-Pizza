@@ -46,6 +46,8 @@ class Product(db.Model):
     price = db.Column(db.Integer(), nullable = False)
     size = db.Column(db.String(255), nullable = False)
     image=db.Column(db.String())
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
+
 
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
