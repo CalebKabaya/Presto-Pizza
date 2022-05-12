@@ -3,24 +3,17 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-.nav-link {
-    margin: 20%;
-    padding: 60px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-
-}
-
-.nav-item {
-    padding: 20px;
-    color: black;
-}
-
 #bg-img {
-    background-image: url(../images/pizza-g33107d15c_1920.jpg);
+    background-image: url("/static/images/pizza-g33107d15c_1920.jpg");
+}
 
-
+#icons{
+    /* background-color: black; */
+    width: 14%;
+    font-size: x-large;
+    justify-content: space-evenly;
+}
+#bg-img {
 
     height: 100vh;
     background-position: center;
@@ -29,23 +22,9 @@
     position: relative;
 }
 
-.nav-item a {
-    color: white;
-}
 
-.nav-item a:hover {
-    color: #f99c3e;
-    transform: translateY(-15px);
-    transition: transform.3s;
 
-}
 
-#nav-a {
-    color: #f99c3e;
-    font-size: 28px;
-    font-weight: bolder;
-
-}
 
 .bunner {
     color: white;

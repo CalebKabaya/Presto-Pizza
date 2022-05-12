@@ -21,13 +21,13 @@
     <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
     <!-- Styles block -->
 
-    <title>Pitch-Web</title>
+    <title>PRESTO-PIZZA</title>
 </head>
 
 <body>
     {% extends 'bootstrap/base.html'%} {% block styles %} {{super()}} {% endblock %}
 
-    {% block navbar %} {% include 'main/navbar.html' %} {% endblock %}
+    {% include 'main/navbar.html' %}
 
 
 
