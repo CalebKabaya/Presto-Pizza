@@ -16,7 +16,7 @@ class ProdConfig(Config):
 
 
 class DevConfig(Config):
-    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://'
+    # SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://venecia:12345@localhost/pizza'
     DEBUG = True
 
 config_options = {
