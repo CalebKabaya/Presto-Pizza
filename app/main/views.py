@@ -1,7 +1,6 @@
 from flask import render_template,request,redirect,url_for,abort,flash
 from . import main
 # from ..requests import 
-from ..models import User
 from .forms import UpdateProfile
 from ..models import Product, User
 # from .. import db,photos
@@ -13,6 +12,15 @@ def index():
 
 
     return render_template('main/index.html')
+
+@main.route('/products')
+@login_required
+def product():
+  
+    
+    user = current_user._get_current_object().id
+    return render_template('pizza_display.html', product=product,  user=user)
+
 
 @main.route('/user')
 @login_required
