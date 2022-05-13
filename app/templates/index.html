@@ -1,9 +1,9 @@
-{% extends 'main/base.html'%}
-{% block content%}
+{% extends 'base.html'%} {% block content%}
+
 <body>
     <header>
-        <div class="container-fluid" id="bg-img" >
-<!-- 
+        <div class="container-fluid" id="bg-img">
+            <!-- 
             <div class="container">
                 <nav class="navbar navbar-expand-lg ">
                     <div class="container-fluid" id="nav">
@@ -36,13 +36,13 @@
                     </div>
 
                 </nav> -->
-                <div class="bunner">
-                    <div class="col-1">
-                        <h2>QUALITY<br>PIZZA</h2>
-                        <p>HEALTHY PIZZA FOR HEALTH BODY</p>
-                    </div>
+            <div class="bunner">
+                <div class="col-1">
+                    <h2>QUALITY<br>PIZZA</h2>
+                    <p>HEALTHY PIZZA FOR HEALTH BODY</p>
                 </div>
             </div>
+        </div>
         </div>
     </header>
     <section class="services">
@@ -52,27 +52,21 @@
                     <img src="{{url_for('static', filename='images/Daco_4693453-removebg-preview.png')}}" />
                     <!-- <img src="./images/Daco_4693453-removebg-preview.png" alt=""> -->
                     <h2>ORDER YOUR PIZZA</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error
-                        enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia
-                        obcaecati unde ex!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia obcaecati unde ex!</p>
                 </div>
                 <div class="small-container">
                     <img src="{{url_for('static', filename='images/kindpng_5871102.png')}}" />
 
                     <!-- <img src="./images/kindpng_5871102.png" alt=""> -->
                     <h2>DELIVERY OR PICK UP</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error
-                        enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia
-                        obcaecati unde ex!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia obcaecati unde ex!</p>
                 </div>
                 <div class="small-container">
                     <img src="{{url_for('static', filename='images/Daco_4693453.png')}}" />
 
                     <!-- <img src="./images/Daco_4693453.png" alt=""> -->
                     <h2>DELICIOUS RECEIPE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error
-                        enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia
-                        obcaecati unde ex!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio est similique sed velit eos error enim! Molestias, vero. Amet earum culpa alias molestias deleniti! Deserunt voluptatum mollitia obcaecati unde ex!</p>
                 </div>
 
             </div>
@@ -86,12 +80,12 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}"class="card-img-top" alt="..." id="image" />
+                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}" class="card-img-top" alt="..." id="image" />
 
                         <!-- <img src="./images/american-g82b51a7d9_1920.jpg" class="card-img-top" alt="..." id="image"> -->
                         <div class="middle">
                             <a href="#order">
-                            <div class="text">Buy Now!</div>
+                                <div class="text">Buy Now!</div>
                             </a>
                         </div>
                         <div class="card-body" id="add-body">
@@ -101,13 +95,14 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}"class="card-img-top" alt="..." id="image" />
+                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}" class="card-img-top" alt="..." id="image" />
 
                         <!-- <img src="./images/american-g82b51a7d9_1920.jpg" class="card-img-top" alt="..." id="image"> -->
                         <div class="middle">
                             <a href="#order">
                                 <div class="text">Buy Now!</div>
-                                </a>                        </div>
+                            </a>
+                        </div>
                         <div class="card-body" id="add-body">
                             <h5 class="card-title">Chicken Tikka B.B.Q</h5>
                         </div>
@@ -115,13 +110,14 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}"class="card-img-top" alt="..." id="image" />
+                        <img src="{{url_for('static', filename='images/american-g82b51a7d9_1920.jpg')}}" class="card-img-top" alt="..." id="image" />
 
                         <!-- <img src="./images/american-g82b51a7d9_1920.jpg" class="card-img-top" alt="..." id="image"> -->
                         <div class="middle">
                             <a href="#order">
                                 <div class="text">Buy Now!</div>
-                                </a>                        </div>
+                            </a>
+                        </div>
                         <div class="card-body" id="add-body">
                             <h5 class="card-title">Veggie tikka</h5>
                         </div>
@@ -139,114 +135,106 @@
             <div class="row row-cols-1 row-cols-md-4 g-4" id="menu-row">
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/p8.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p8.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/1.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken Hawaiian </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/p10.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p10.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/2.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Meat Deluxe </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
-                    
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p7.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p7.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/3.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken & Mushroom </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p1.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p1.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/1.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Veg Tikka</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p5.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p5.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/5.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Pepperoni</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p6.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p6.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/6.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken & Beef Pepperoni</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p3.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p3.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/3.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken & Mushroom </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/p2.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/p2.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/2.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Veggie tikka</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                        <a href="#order"button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
+                        <a href="/login" button type="button" class="btn btn-dark btn-lg">Order Now!</button></a>
 
                     </div>
                 </div>
@@ -254,7 +242,7 @@
         </div>
     </section>
     <section class="chefs">
-<div class="container-fluid">
+        <div class="container-fluid">
             <div class="descipt3">
                 <p>Fresh From Pizzaly</p>
                 <h2>OUR CHEFS</h2>
@@ -262,53 +250,49 @@
             <div class="row row-cols-1 row-cols-md-4 g-4" id="menu-row1">
                 <div class="col" id="menu-cols1">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/a.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/a.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/1.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken Hawaiian </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols1">
                     <div class="card h-100">
-                        <img src="{{url_for('static', filename='images/b.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/b.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/2.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Caleb Kabaya </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
-                    
+
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols1">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/c.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/c.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/3.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Chicken & Mushroom </h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
 
                     </div>
                 </div>
                 <div class="col" id="menu-cols1">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/d.jpg')}}"class="card-img-top" alt="..." />
+                        <img src="{{url_for('static', filename='images/d.jpg')}}" class="card-img-top" alt="..." />
 
                         <!-- <img src="./images/1.jpg" class="card-img-top" alt="..."> -->
                         <div class="card-body">
                             <h5 class="card-title">Veg Tikka</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
                         </div>
 
                     </div>
@@ -325,13 +309,11 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/pizza-6749843_1920.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/pizza-6749843_1920.jpg')}}" />
 
                         <div class="card-body">
                             <h5 class="card-title">Pizza Crust Types: Self-Rising and Par-Baked</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action. <a href="#">Read More!</a>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action. <a href="#">Read More!</a>
                             </p>
                         </div>
                         <div class="card-footer">
@@ -341,14 +323,12 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/service-1303313_1920.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/service-1303313_1920.jpg')}}" />
 
                         <div class="card-body">
                             <h5 class="card-title">Thick or Thin: Different Styles of Pizza Crust for 8 Classic Pies
                             </h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.<a href="#">Read More!</a></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.<a href="#">Read More!</a></p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -357,13 +337,11 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                      <img src="{{url_for('static', filename='images/1.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/1.jpg')}}" />
 
                         <div class="card-body">
                             <h5 class="card-title">11 Top Tips to Maximize Your Pizzeria Profit Margins in 2022</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This card has even longer content than the first to show that equal
-                                height action.<a href="#">Read More!</a></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.<a href="#">Read More!</a></p>
                         </div>
                         <div class="card-footer">
                             <small class="text-muted">Last updated 3 mins ago</small>
@@ -384,7 +362,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4" id="row">
                 <div class="colums">
                     <div class="testimonial">
-                      <img src="{{url_for('static', filename='images/y.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/y.jpg')}}" />
 
                         <!-- <img src="./images/user-1.png" alt=""> -->
                         <div class="name">Caleb Kabaya</div>
@@ -395,16 +373,13 @@
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos
-                            facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit
-                            consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi,
-                            sapiente.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi, sapiente.
                         </p>
                     </div>
                 </div>
                 <div class="colums">
                     <div class="testimonial">
-                      <img src="{{url_for('static', filename='images/z.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/z.jpg')}}" />
 
                         <div class="name">Caleb Kabaya</div>
                         <div class="stars">
@@ -415,16 +390,13 @@
                             <i class="fa fa-star-o" aria-hidden="true"></i>
 
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos
-                            facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit
-                            consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi,
-                            sapiente.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi, sapiente.
                         </p>
                     </div>
                 </div>
                 <div class="colums">
                     <div class="testimonial">
-                      <img src="{{url_for('static', filename='images/x.jpg')}}" />
+                        <img src="{{url_for('static', filename='images/x.jpg')}}" />
 
                         <div class="name">Caleb Kabaya</div>
                         <div class="stars">
@@ -434,10 +406,7 @@
                             <i class="fa fa-star" aria-hidden="true"></i>
                             <i class="fa fa-star-half-o" aria-hidden="true"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos
-                            facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit
-                            consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi,
-                            sapiente.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem maiores quos facere voluptatem explicabo totam itaque tenetur sint, sit consequuntur odit consectetur, laudantium temporibus fuga vitae excepturi aperiam. Nisi, sapiente.
                         </p>
                     </div>
                 </div>
@@ -451,61 +420,60 @@
             <div class="container-one">
                 <h5>Delicious Restaurant</h5>
                 <h2>ABOUT PRESTO-PIZZA</h2>
-                <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur
-                    dapibus mauris sed leo cursus aliquetcras suscipit. Sit amet, consectetur adipiscing elit quisque
-                    eget maximus velit, non eleifend libero curabitur Sit amet, consectetur adipiscing elit quisque eget
-                    maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit. Sit
-                    amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur</p>
+                <p>Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit. Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur
+                    Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero curabitur dapibus mauris sed leo cursus aliquetcras suscipit. Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero
+                    curabitur
+                </p>
 
-                    <button type="button" class="btn btn-warning" id="button-1">View More</button>
+                <button type="button" class="btn btn-warning" id="button-1">View More</button>
 
             </div>
             <div class="container-two">
-              <img src="{{url_for('static', filename='images/about-pizzon.png')}}" />
+                <img src="{{url_for('static', filename='images/about-pizzon.png')}}" />
 
-                </div>
+            </div>
 
         </div>
     </section>
-     <!-- contact section -->
-  <section class="contact" id="contacts">
-      <div class="container" id="for-contact">
-          <div class="contact-container">
-              <h2>PRESTO-PIZZA</h2>
-              <h4>Phone: +254748860959</h4>
-              <h4>Email - prestopizza@gmail.com</h4>
-          </div>
-          <div class="container-opening">
-              <h2>OPENING HOURS</h2>
-              <h5>Mon-Tue: 6.00 am - 10.00 pm</h5>
-              <h5>wed-thurs: 6.00 am - 10.00 pm</h5>
-              <h5>Fri-Sat: 6.00 am - 10.00 pm</h5>
-              <h5>Sunday: Closed</h5>
-          </div>
-          <div class="container-opening">
-            <h2>USEFUL LINKS</h2>
-            <h5>Privacy Policy</h5>
-            <h5>Order Tracking</h5>
-            <h5>Warranty and Services</h5>
-            <h5>About</h5>
-            <h5>Contact Us</h5>
-            <h5>Wishlist</h5>
+    <!-- contact section -->
+    <section class="contact" id="contacts">
+        <div class="container" id="for-contact">
+            <div class="contact-container">
+                <h2>PRESTO-PIZZA</h2>
+                <h4>Phone: +254748860959</h4>
+                <h4>Email - prestopizza@gmail.com</h4>
+            </div>
+            <div class="container-opening">
+                <h2>OPENING HOURS</h2>
+                <h5>Mon-Tue: 6.00 am - 10.00 pm</h5>
+                <h5>wed-thurs: 6.00 am - 10.00 pm</h5>
+                <h5>Fri-Sat: 6.00 am - 10.00 pm</h5>
+                <h5>Sunday: Closed</h5>
+            </div>
+            <div class="container-opening">
+                <h2>USEFUL LINKS</h2>
+                <h5>Privacy Policy</h5>
+                <h5>Order Tracking</h5>
+                <h5>Warranty and Services</h5>
+                <h5>About</h5>
+                <h5>Contact Us</h5>
+                <h5>Wishlist</h5>
 
+            </div>
         </div>
-      </div>
 
-  </section>
-   <!-- Footer -->
-   <footer class="page-footer bg-dark text-white font-small blue">
+    </section>
+    <!-- Footer -->
+    <footer class="page-footer bg-dark text-white font-small blue">
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2022 Copyright:
-        <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
-    </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2022 Copyright:
+            <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+        </div>
 
-</footer>
-    
-   
+    </footer>
+
+
 </body>
 
 </html>
