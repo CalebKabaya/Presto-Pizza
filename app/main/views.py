@@ -8,7 +8,7 @@ from ..models import Product, User
 from flask_login import login_required,current_user
 
 from flask import render_template,request,redirect,url_for,abort
-from .. import db,photos
+from .. import db
 from flask_login import login_required,current_user
 
 from werkzeug.utils import secure_filename
