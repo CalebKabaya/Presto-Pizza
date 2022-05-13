@@ -22,6 +22,10 @@ def index():
 
 
     return render_template('index.html')
+@main.route('/cart')
+def cart():
+    return render_template('main/cart.html')
+
 
 @main.route('/login')
 @login_required
@@ -56,7 +60,7 @@ def new_pitch():
         new_product_object = Product(description=description,user_id=current_user._get_current_object().id, size= size,name =name, submit= submit )
         new_product_object.save_p()
         return redirect(url_for('main.index'))
-        
+
     return render_template('addproduct.html', form = form)  
 
 
