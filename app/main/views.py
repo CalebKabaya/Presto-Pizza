@@ -1,14 +1,14 @@
 from . import main
 
 # from ..requests import 
-from .forms import UpdateProfile
+from .forms import   UpdateProfile
 from ..models import Product, User
 # from .. import db,photos
 
 from flask_login import login_required,current_user
 
 from flask import render_template,request,redirect,url_for,abort
-from .. import db,photos
+# from .. import db,photos
 from flask_login import login_required,current_user
 
 from werkzeug.utils import secure_filename
@@ -21,26 +21,16 @@ from .forms import ProductForm
 def index():
 
 
-    return render_template('main/index.html')
+    return render_template('index.html')
 
-
-@main.route('/products')
-@login_required
-def product():
-  
-    
-    user = current_user._get_current_object().id
-    return render_template('pizza_display.html', product=product,  user=user)
-
-
-@main.route('/user')
+@main.route('/login')
 @login_required
 def user():
     username = current_user.username
     user = User.query.filter_by(username=username).first()
     if user is None:
         return ('not found')
-    return render_template('profile/profile.html', user=user)
+    return render_template('addproduct.html', user=user)
 
 @main.route('/user/<name>/update_profile', methods=['POST', 'GET'])
 @login_required
@@ -67,15 +57,7 @@ def new_pitch():
         new_product_object.save_p()
         return redirect(url_for('main.index'))
         
-    return render_template('main/addproduct.html', form = form)  
+    return render_template('addproduct.html', form = form)  
 
-# @main.route('/create_new', methods = ['POST'])
-# def update_pic(uname):
-#     images = Product.query.filter_by(name = uname).first()
-#     if 'photo' in request.files:
-#         filename = photos.save(request.files['photo'])
-#         path = f'photos/{filename}'
-#         images.profile_pic_path = path
-#         db.session.commit()
-#     return redirect(url_for('main.profile',uname=uname))
+
 
