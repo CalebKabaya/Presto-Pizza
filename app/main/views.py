@@ -34,7 +34,7 @@ def user():
     user = User.query.filter_by(username=username).first()
     if user is None:
         return ('not found')
-    return render_template('addproduct.html', user=user)
+    return render_template('main/cart.html', user=user)
 
 @main.route('/user/<name>/update_profile', methods=['POST', 'GET'])
 @login_required
