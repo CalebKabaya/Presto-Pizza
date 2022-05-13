@@ -24,6 +24,11 @@ def index():
     return render_template('main/index.html')
 
 
+@main.route('/cart')
+def cart():
+    return render_template('main/cart.html')
+
+
 @main.route('/products')
 @login_required
 def product():
@@ -69,13 +74,5 @@ def new_pitch():
         
     return render_template('main/addproduct.html', form = form)  
 
-# @main.route('/create_new', methods = ['POST'])
-# def update_pic(uname):
-#     images = Product.query.filter_by(name = uname).first()
-#     if 'photo' in request.files:
-#         filename = photos.save(request.files['photo'])
-#         path = f'photos/{filename}'
-#         images.profile_pic_path = path
-#         db.session.commit()
-#     return redirect(url_for('main.profile',uname=uname))
+
 
