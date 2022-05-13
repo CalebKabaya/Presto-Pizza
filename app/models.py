@@ -47,7 +47,7 @@ class Product(db.Model):
     size = db.Column(db.String(), nullable = False)
     image=db.Column(db.String())
 
-
+    user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
 
 
     
@@ -58,3 +58,5 @@ class Product(db.Model):
         
     def __repr__(self):
         return f'Product {self.post}'
+ 
+ 

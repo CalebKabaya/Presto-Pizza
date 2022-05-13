@@ -12,3 +12,7 @@ def index():
 
 
     return render_template('main/index.html')
+
+@main.route('/cart')
+def cart():
+    return render_template('main/cart.html')
